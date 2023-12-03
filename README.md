@@ -27,3 +27,7 @@ yarn dev
 - Make the UI more responsive.
 - Maybe setup some unit & integration tests.
 - More testings on the UI.
+
+## How many hours you actually spent finishing the assignment?
+
+Nearly 4 hours.
