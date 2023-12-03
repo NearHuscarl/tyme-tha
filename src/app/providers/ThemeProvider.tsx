@@ -36,6 +36,8 @@ declare module "@mui/material/styles/createPalette" {
   }
 }
 
+const CONTROL_HEIGHT = 40;
+
 export const theme = createTheme({
   palette: {
     mode: "dark",
@@ -46,7 +48,11 @@ export const theme = createTheme({
     MuiButton: {
       defaultProps: {
         size: "small",
-        sx: { fontWeight: "semibold" },
+        sx: {
+          fontWeight: "semibold",
+          height: CONTROL_HEIGHT,
+          padding: `0 20px`,
+        },
       },
     },
     MuiTextField: {
@@ -58,7 +64,7 @@ export const theme = createTheme({
       styleOverrides: {
         root: {
           borderRadius: 4,
-          height: 40,
+          height: CONTROL_HEIGHT,
         },
       },
     },
