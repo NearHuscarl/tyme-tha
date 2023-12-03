@@ -1,30 +1,29 @@
-# React + TypeScript + Vite
+# Marketplace
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Getting Started
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+```
+yarn
+yarn dev
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## What have you done so far?
+
+- Scaffolded the project using ViteJS and setup routing, state management, and UI framework using various libs & fws.
+- Structure the project to be more scalable and maintainable at the start using module-based architecture.
+- Created a form on the left sidebar to filter the cards by multiple criteria.
+  - All form fields are optional and the form can be submitted with no fields selected.
+  - The form can be reset to its initial state by clicking the reset button.
+  - The tags list is a multi-select field that allows the user to filter based on multiple attributes (theme & tier).
+- Created a simple UI to display character cards in a grid.
+  - The cards by default are not sorted.
+  - The cards are not paginated. User can click the "View more" button to load the next 8 cards.
+  - The cards can be sorted by price.
+  - The characters are updated every 60 seconds using the current filters.
+
+## What would you have done if you had more time?
+
+- Add some kind of indicator to show the user that the characters are being updated.
+- Make the UI more responsive.
+- Maybe setup some unit & integration tests.
+- More testings on the UI.
