@@ -11,11 +11,11 @@ yarn dev
 
 - Scaffolded the project using ViteJS and setup routing, state management, and UI framework using various libs & fws.
 - Structure the project to be more scalable and maintainable at the start using module-based architecture.
-- Created a form on the left sidebar to filter the cards by multiple criteria.
+- Created [a form](https://github.com/NearHuscarl/tyme-tha/blob/master/src/app/modules/marketplace/components/Filters.tsx) on the left sidebar to filter the cards by multiple criteria.
   - All form fields are optional and the form can be submitted with no fields selected.
   - The form can be reset to its initial state by clicking the reset button.
   - The tags list is a multi-select field that allows the user to filter based on multiple attributes (theme & tier).
-- Created a simple UI to display character cards in a grid.
+- Created a simple UI to display [character cards in a grid](https://github.com/NearHuscarl/tyme-tha/blob/master/src/app/modules/marketplace/components/CharacterGrid.tsx).
   - The cards by default are not sorted.
   - The cards are not paginated. User can click the "View more" button to load the next 8 cards.
   - The cards can be sorted by price.
